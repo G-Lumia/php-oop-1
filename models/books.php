@@ -13,7 +13,7 @@
         }
 
         public function printBook():string{
-            return "<span> $this->title, $this->cost, $this->genre </span>";
+            return "<span> $this->title, $this->cost, $this->genre <br> </span>";
         }
     }
 ?>
