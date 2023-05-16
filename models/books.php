@@ -13,8 +13,17 @@
             $this->genre2 = $genre2;
         }
 
-        public function printBook():string{
-            return "<span> Titolo: $this->title Costo: $this->cost euro Genere: $this->genre $this->genre2 <br> </span>";
+        public function getTitle(){
+            return $this->title;
+        }
+        public function getCost(){
+            return $this->cost;
+        }
+        public function getGenre(){
+            return $this->genre;
+        }
+        public function getGenre2(){
+            return $this->genre2;
         }
     }
 ?>
