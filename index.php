@@ -17,7 +17,7 @@
                 <p>
                     Genere: 
                     <?php 
-                        echo "{$libro->getGenre()} {$libro->getGenre2()}";
+                        echo "{$libro->getGenres()}";
                     ?>
                 </p>
             </h3>
