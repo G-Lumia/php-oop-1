@@ -10,7 +10,7 @@
             ?>
             <div class="col-12 col-sd-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <div class="card-title text-center">
+                    <div class="card-title text-center m-2">
                         <h4>
                             <?php  echo $movie->getTitle();?>
                         </h4>
@@ -19,15 +19,16 @@
                         <img src="<?php echo $movie->getPosterImg()?>" class="card-img-top" alt="<?php  echo $movie->getTitle()?>">
                         <p>
                             <p>
-                                Lingua originale: <?php echo $movie->getLanguage();?>
+                                <strong> Lingua originale: </strong>
+                                <br>
+                                <?php echo $movie->getLanguage();?>
                             </p>
                         </p>
                         <p>
                             <p>
-                                Genere: 
-                                <?php 
-                                    echo "{$movie->getGenres()}";
-                                ?>
+                                <strong> Genere: </strong>
+                                <br>
+                                <?php echo "{$movie->getGenres()}";?>
                             </p>
                         </p>
                     </div>

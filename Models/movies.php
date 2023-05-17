@@ -15,13 +15,13 @@
             return $this->title;
         }
         public function getLanguage(){
-            return $this->language;
+            return ucwords($this->language);
         }
         public function getPosterImg(){
             return $this->posterImg;
         }
         public function getGenres(){
-            return implode("-" , $this->genres);
+            return ucwords(implode(" - " , $this->genres));
         }
     }
 ?>
